@@ -8,6 +8,15 @@ var address: String
 
 var rg: Int = 3476228
 var driverLicense: Int?
+driverLicense = 345
+print("O número da carteira é: ", driverLicense!) // Desembrulhando o Optional (unwrap)
 
-print(driverLicense)
+
+// Optional binding -  maneira segura
+if let driverL = driverLicense{
+    print("O número da carteira é: ",driverL)
+} else {
+    
+    print("Não possui carteira de motorista.")
+}
 
