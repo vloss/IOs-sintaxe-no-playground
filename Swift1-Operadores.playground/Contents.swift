@@ -54,7 +54,22 @@ let grade2 = 9.8
 let betterThanFriend = grade1 > grade2
 
 // Menor que: <
-let grade1 = 8.9
-let minimumGrade = 9.8
+let grade = 7.0
+let minimumGrade = 7.0
 
-let betterThanFriend = grade1 > grade2
+let reproved = grade < minimumGrade
+
+// Maior ou igual a: >=
+// Menor ou igual a: <=
+let approved = grade >= minimumGrade
+
+
+// Igualdad: ==
+let teacherName = "Eric"
+let studentName = "eric"
+
+let sameNames = teacherName.lowercased() == studentName.lowercased()
+
+// Desigualdade: !=
+let differentNames = teacherName != studentName
+
