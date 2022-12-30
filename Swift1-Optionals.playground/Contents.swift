@@ -20,3 +20,26 @@ if let driverL = driverLicense{
     print("Não possui carteira de motorista.")
 }
 
+
+let addrressNumber = Int("100")
+print(addrressNumber)
+
+if let addressNumber = addrressNumber {
+    print(addrressNumber)
+}
+
+
+//Nil coaliscing operador (Operador de coalescência nula)
+let number: String = "578"
+let addressNumber2 = Int(number) ?? 0
+
+
+
+// Implicit Unwrapped Optionals
+var name: String!
+//name = "Bia"
+
+if name != nil {
+    print(name.count)
+}
+
