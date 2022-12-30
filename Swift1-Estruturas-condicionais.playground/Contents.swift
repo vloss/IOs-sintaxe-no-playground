@@ -40,11 +40,54 @@ if temperature <= 0 {
 
 
 let letter = "i"
-let letterType = ""
+var letterType = ""
 
 switch letter {
-    case "a", "e", "i", "o", "u"
+    case "a", "e", "i", "o", "u":
         letterType = "Vogal"
-    default
+    default:
         letterType = "Consoante"
+}
+
+let speed = 95.0
+
+switch speed {
+    case 0.0..<20.0:
+        print("Primeira Marcha")
+case 20.0..<40.0:
+        print("Segunda Marcha")
+case 40.0..<50.0:
+        print("Terceira Marcha")
+case 50.0..<90.0:
+        print("Quarta Marcha")
+    default:
+        print("Quinta Marcha")
+}
+
+
+
+// Closed Range e Half-Closed Range
+// Closed Range (...)
+// Half-Closed Range (..<)
+
+let range0_10 = 0...10
+let range0_9 = 0..<10
+
+
+
+//
+let firstLetter = "e"
+
+switch firstLetter {
+    case "a"..."f":
+        print("Primeiro Lote")
+
+case "g"..."l":
+        print("Segundo Lote")
+
+case "m"..."r":
+        print("Terceiro Lote")
+
+default:
+        print("Quarto Lote")
 }
