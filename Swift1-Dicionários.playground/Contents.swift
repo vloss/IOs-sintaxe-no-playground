@@ -17,7 +17,6 @@ states["GO"] = "Goiaz"
 
 //states["GO"] = "Goiás"
 
-
 let outGO = states.updateValue("Goiás", forKey: "GO")
 
 print(states)
