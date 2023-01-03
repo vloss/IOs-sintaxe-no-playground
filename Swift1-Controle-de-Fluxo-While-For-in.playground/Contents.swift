@@ -50,3 +50,54 @@ for person in people {
 for (name, age) in people {
     print(name, age)
 }
+
+// WHILE
+
+var life = 10
+
+while life > 0 {
+    print("O jogador está com \(life) vidas")
+    
+    life = life - 1
+}
+
+
+import Foundation
+
+var megaSena: [Int] = []
+
+while megaSena.count < 6 {
+    let number = Int(arc4random_uniform(60) + 1)
+    
+    if !megaSena.contains(number){
+        megaSena.append(number)
+    }
+}
+
+print(megaSena.sorted())
+
+
+
+// REPEAT WHILE
+
+var tries = 0
+var diceNumber = 0
+
+repeat {
+    tries += 1
+    diceNumber = Int(arc4random_uniform(6) + 1)
+} while diceNumber != 6
+
+print("Você tirou 6 após \(tries) tentativas!")
+
+
+// Utilizando Break em um for
+
+let grades = [10.0, 9.0, 8.5, 7.0, 9.5, 5.0, -1.0, 6.5, 14.0, 7.0, 8.0]
+for grade in grades{
+    print(grade)
+    if grade < 0.0 || grade > 10.0 {
+        print("Nota Invalida!")
+        break
+    }
+}
