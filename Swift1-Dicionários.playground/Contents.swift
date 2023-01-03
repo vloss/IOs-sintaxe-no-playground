@@ -9,6 +9,10 @@ var states = [
     "ES" : "Espírito Santo"
 ]
 
+for state in states{
+    print(state.value)
+}
+
 // Dicionario com tipo definido inicializando em zero
 var studentGrade: [String: Double] = [:]
 

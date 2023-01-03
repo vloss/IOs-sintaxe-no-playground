@@ -20,6 +20,11 @@ guests
 guests[0...3] = ["Vinicius", "Viana", "Loss", "Beatriz", "Fran"]
 guests
 
+//Percorrendo Arrau
+for guest in guests {
+    print(guest)
+}
+
 
 
 guests.first
@@ -53,5 +58,5 @@ guests.insert("Roberto", at: 0)
 
 guests.contains("Helena")
 if guests.contains("Helena"){
-    print("Helena foi convidada!	")
+    print("Helena foi convidada!")
 }
