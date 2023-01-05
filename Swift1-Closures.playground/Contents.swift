@@ -70,3 +70,11 @@ print(uppercaseNames)
 
 let loss = correctedNames.map({$0 + " Loss"})
 print(loss)
+
+
+// FILTER
+let newNames = correctedNames.filter({$0.count <= 6})
+print(newNames)
+
+// REDUCE
+let sumLetters = correctedNames.reduce(0, {$0 + $1.count})
