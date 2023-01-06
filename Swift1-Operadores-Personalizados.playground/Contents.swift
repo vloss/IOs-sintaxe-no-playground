@@ -8,6 +8,8 @@
 //infix
 
 //PREFIX
+import Foundation
+
 prefix operator <|
 prefix func <| (rhs: [Int]) -> [Int]{
     let result = rhs.map({$0 - 1})
@@ -36,3 +38,32 @@ postfix func ❗️ (lhs: Int) -> Int{
 
 3❗️
 4❗️
+5❗️
+
+// INFIX
+infix operator ---
+func --- (lhs: Int, rhs: Int) -> [Int]{
+    return Array(rhs...lhs).reversed()
+}
+
+let resultArrayNumber = 30---12
+print(resultArrayNumber)
+
+
+infix operator >-<
+func >-<(total: Int, universe: Int) -> [Int] {
+    var result: [Int] = []
+    
+    while result.count < total {
+        let randomNumber = Int(arc4random_uniform(UInt32(universe)) + 1)
+        if !result.contains(randomNumber){
+            result.append(randomNumber)
+        }
+    }
+    
+    return result.sorted()
+}
+
+
+print(6>-<60)
+print(5>-<60)
